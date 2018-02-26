@@ -7,11 +7,20 @@ class MyStack
   end
 
   def push(item)
+    @stack << item
+    return @stack
   end
 
   def pop
+    @stack.pop
+    return @stack
   end
 
   def empty?
+    if @stack.length == 0
+      return true
+    else
+      return false
+    end
   end
 end
