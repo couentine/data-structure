@@ -1,6 +1,0 @@
-Question 1&2 : My data are store in an array.
-In ruby we can access any data from this array by using the ID of the element or the correct ruby typo. (first, last)
-
-Question 3
-
-A other way to stare data is to user the hash.
