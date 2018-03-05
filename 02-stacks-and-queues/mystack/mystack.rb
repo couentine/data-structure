@@ -1,5 +1,6 @@
 class MyStack
   attr_accessor :top
+  attr_accessor :stack
 
   def initialize
     @stack = Array.new
@@ -7,18 +8,18 @@ class MyStack
   end
 
   def push(item)
+    self.top = item
     @stack << item
-    return @stack
   end
 
   def pop
-    po = @stack.last
-    @stack.pop
-    return po
+    last_person = @stack.delete_at(-1)
+    self.top = @stack[-1]
+    return last_person
   end
 
   def empty?
-    if @stack.length == 0
+    if @stack.length === 0
       return true
     else
       return false
