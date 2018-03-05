@@ -13,16 +13,16 @@ class MyQueue
   end
 
   def dequeue
-    temp = @queue.first
-    @queue.delete_at(0)
-    @head = @queue.first
-    return temp
+    deq = @head
+    @queue.shift
+    return deq
   end
 
   def empty?
-    if @head == nil
-          true
-        else
-    false
+    if @queue.length == 0
+      return true
+    else
+      return false
+    end
   end
 end
