@@ -12,8 +12,9 @@ class MyStack
   end
 
   def pop
+    po = @stack.last
     @stack.pop
-    return @stack
+    return po
   end
 
   def empty?
