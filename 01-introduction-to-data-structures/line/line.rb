@@ -33,13 +33,7 @@ class Line
   end
 
   def search(person)
-    self.members.each do |r|
-      if r == person
-        return true
-      else
-        return false
-      end
-    end
+    self.members.include?(person) ? person : nil;
   end
 
   private
