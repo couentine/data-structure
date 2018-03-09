@@ -20,7 +20,7 @@ class Line
   end
 
   def front
-    return self.menbers.first
+    return self.members.first
   end
 
   def middle
@@ -29,7 +29,7 @@ class Line
   end
 
   def back
-    return self.menbers.last
+    return self.members.last
   end
 
   def search(person)

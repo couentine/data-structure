@@ -1,0 +1,17 @@
+How does your data structure allow developers to access and manipulate the data?
+
+  In the line.rb, screen.rb, and pixel.rb files, the following classes contain accessors.
+    These accessors via the command 'attr_accessor' allow the properties of the object
+    to be read and put out of class. While data structures created with these classes
+    can be viewed and manipulated from outside the class.
+
+If a developer wanted to find a specific element in your data structure, how would you search for it?
+
+  The data structure is based on arrays, searching for an element is based on regular array functions.
+  exp: array.include?
+
+What other real-world data can each structure represent?
+
+  In the line example, an inventory control system would be a good example of this
+  algorithm. A new product comes in, it goes to the back then the stock person
+  can take any which one from stock.
