@@ -5,6 +5,10 @@ class HashClass
   end
 
   def []=(key, value)
+    new_value = HashItem.new(key, value)
+    i = index(key, size)
+
+    
   end
 
 
@@ -18,6 +22,7 @@ class HashClass
   # We are hashing based on strings, let's use the ascii value of each string as
   # a starting point.
   def index(key, size)
+
   end
 
   # Simple method to return the number of items in the hash

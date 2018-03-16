@@ -4,5 +4,6 @@ class Node
 
   def initialize(data)
     @date = data
+    @next = nil
   end
 end
