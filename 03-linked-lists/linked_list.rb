@@ -9,7 +9,6 @@ class LinkedList
     if @head === nil
       @head = node
       @tail = @head
-      @tail.next = nil
     else
       current = @head
       while current.next != nil
