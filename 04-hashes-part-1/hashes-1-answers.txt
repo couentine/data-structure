@@ -1,0 +1,9 @@
+Explain why doubling the size of the underlying array of your HashClass may be a
+poor idea.
+
+Doubling the table size each time there is a collision may not be the best way to solve this problem.
+If we remember that tables are great for accessing information as long as we know the index, but when we double the size of the array all the existing data must be copied to the new larger table. It is an expensive processing operation.
+
+In addition, each time we double a table, we increase the number of empty slots which by definition we create fragmentation and not being very memory-allocating sensitive.
+
+The tables are also kept in the same memory blocks. Meaning if the array grows, and there is not enough room, the memory manager will look for other blocks that can welcome the new size. It is also an expensive operation.
