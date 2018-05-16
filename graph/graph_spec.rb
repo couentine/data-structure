@@ -1,6 +1,6 @@
 include RSpec
 
-require_relative 'graph_search'
+require_relative 'graph'
 
 RSpec.describe GraphSearch, type: Class do
 
@@ -36,7 +36,7 @@ RSpec.describe GraphSearch, type: Class do
     john_lithgow.film_actor_hash["Interstellar"] = [matthew_mcconaughey, anne_hathaway, lori_singer]
     steve_buscemi.film_actor_hash["The Big Lebowski"] = [jeff_bridges, john_goodman, julianne_moore]
     julianne_moore.film_actor_hash["Crazy Stupid Love"] = [tim_roth, zoe_saldanas]
-    
+
 
   end
 
